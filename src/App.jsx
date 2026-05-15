@@ -3,7 +3,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import AddActivity from "./pages/AddActivity";
 import MySubmissions from "./pages/MySubmissions";
-import ManagerDashboard from "./pages/ManagerDashboard";
+
 
 function App() {
 
@@ -42,7 +42,6 @@ function App() {
   if (!user) {
     return <Login setUser={setUser} />;
   }
-
 
   if (page === "add") {
     return (
